@@ -254,10 +254,10 @@ def ecdfplot(dfplot, classname, num_classes, bin_values, plotfield):
 # ------------------------------
 def main():
     # Load data
-    hex10000 = gpd.read_file(r'U:\fromHardDisk\Tokunaga\Manuscript\NC\submission\dataset_submission\hexagon10000.shp')
-    Tk = pd.read_csv(r'U:\fromHardDisk\Tokunaga\Manuscript\NC\submission\dataset_submission\Networks_5th_order.csv')
-    Tk_angles = pd.read_csv(r'U:\fromHardDisk\Tokunaga\Manuscript\NC\submission\dataset_submission\Classified_angles_vs_Tk_c.csv')
-    grouped_by_id0=pd.read_csv(r'U:\fromHardDisk\Tokunaga\Manuscript\NC\submission\dataset_submission\basin_aveDeltaHS_junction.csv')
+    hex10000 = gpd.read_file('hexagon10000.shp')
+    Tk = pd.read_csv('Networks_5th_order.csv')
+    Tk_angles = pd.read_csv('Classified_angles_vs_Tk_c.csv')
+    grouped_by_id0=pd.read_csv('basin_aveDeltaHS_junction.csv')
 
     # ************* figure 2 *************************************
     fig = plt.figure(figsize=(18, 18))
